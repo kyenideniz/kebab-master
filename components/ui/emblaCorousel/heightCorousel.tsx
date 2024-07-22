@@ -14,7 +14,6 @@ import {
 } from './arrowButton'
 import { DotButton, useDotButton } from './dotButton'
 import './css/embla.css'
-import './css/base.css'
 
 const TWEEN_FACTOR_BASE = 0.52
 

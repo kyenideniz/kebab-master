@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import EmblaCarousel from "@/components/ui/emblaCorousel/heightCorousel";
 import { Input } from "@/components/ui/input";
 
+import '@/components/ui/emblaCorousel/css/base.css'
+
 export default function Home() {
   
 const OPTIONS: EmblaOptionsType = { loop: true }
@@ -11,18 +13,30 @@ const SLIDE_COUNT = 5
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
   return (
-    <div className="p-2 ">
-      <div className="p-12">
-        <div className="pt-24 grid grid-cols-5 grid-rows-3 w-full min-h-[300px] space-x-3 items-center justify-center"> 
-          <div className="h-[92px] w-[92px] bg-slate-300 col-start-1 col-span-1 row-start-1">Img1</div>
-          <div className="h-full col-span-3 w-full col-start-2 row-start-1 row-span-5 text-4xl">
-            Discover the benefits of KebabMaster Machines
+    <div className="p-2 w-full">
+      <div className="p-12 w-full items-center justify-center flex">
+        <div className="max-w-6xl grid grid-cols-5 grid-rows-2 w-full space-x-3 relative "> 
+          <div className="h-[92px] w-[92px] bg-slate-300 col-start-1 col-span-1 row-start-1 left-0 top-0">
+            Img1
           </div>
-            <div className="h-[92px] w-[92px] bg-slate-300 col-start-5 row-start-3">Img 2</div>
-         
-              <Input placeholder="text" className="w-full border col-span-2 col-start-2 row-start-3" />
-              <Button className="bg-red-500 col-span-1 row-start-3 col-start-4">Submit</Button>
-       
+
+          <div className=" col-span-3  col-start-2 row-start-1 row-span-2 absolute top-8 ">
+            <div className="text-justify font-[600] pb-8 text-[36px] w-full text-4xl">
+              Discover the benefits of
+            </div>
+            <div className=" text-justify font-[600] text-[36px] w-full text-4xl">
+              KebabMaster Machines
+            </div>
+          </div>
+
+          <div className="h-[92px] w-[92px] bg-slate-300 col-start-5 row-start-2 absolute right-0 bottom-0">
+            Img 2
+          </div>
+
+          <div className="space-x-4 col-span-3 w-full col-start-2 row-start-2 row-span-1 absolute -bottom-4 grid grid-cols-12 ">
+            <Input placeholder="Contact Address" className="col-span-10 w-full h-16 rounded-none text-xl shadow-lg border-0" />
+            <Button className=" bg-red-500 col-span-2 h-16 w-full text-lg rounded-none">Submit</Button>
+          </div>
         </div>  
       </div>
 
@@ -77,9 +91,9 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
           </div>
         </div>
         <div>
-        <div className="items-center justify-center max-h-[190px] aspect-square bg-gray-400">
-          12
-        </div>
+          <div className="items-center justify-center max-h-[190px] aspect-square bg-gray-400">
+            12
+          </div>
         </div>
       </div>
     </div>

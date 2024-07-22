@@ -1,8 +1,14 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Titillium_Web as Font } from 'next/font/google'
 import { Metadata } from 'next'
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Font({ 
+    weight: ['200', '300', '400', '600', '700', '900'],
+    style: ['normal', 'italic'],
+    subsets: ['latin'],
+    display: 'swap',
+    fallback: ['Arial', 'sans-serif']
+ });
 
 export const metadata: Metadata = {
   title: "Admin Eurolines",
@@ -16,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className && "w-full h-full"}>
+      <body className={font.className && "w-full h-full"}>
             {children}
         </body>
     </html>
