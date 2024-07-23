@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-
+import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
@@ -33,13 +33,19 @@ export function HomeCorousel() {
   return (
     <div className="w-full">
       <div className="w-full items-center justify-center flex">
-        <Carousel setApi={setApi} className="w-full max-w-4xl aspect-square" opts={{ loop: true }}>
+        <Carousel setApi={setApi} className="w-full max-w-3xl aspect-square" opts={{ loop: true }}>
           <CarouselContent>
-            {Array.from({ length: 5 }).map((_, index) => (
+            {Array.from({ length: 4 }).map((_, index) => (
               <CarouselItem key={index}>
-                <Card>
+                <Card className="border-none">
                   <CardContent className="flex aspect-square w-full items-center justify-center p-6">
-                    <span className="text-4xl font-semibold">{index + 1}</span>
+                  <Image 
+                    src={`/home/${index+1}.jpg`}
+                    alt={"left"}            
+                    width={1080}
+                    height={1080}
+                    className="w-full h-full absolute top-8"
+                  />
                   </CardContent>
                 </Card>
               </CarouselItem>
