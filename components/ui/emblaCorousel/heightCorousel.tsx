@@ -14,6 +14,7 @@ import {
 } from './arrowButton'
 import { DotButton, useDotButton } from './dotButton'
 import './css/embla.css'
+import Image from 'next/image'
 
 const TWEEN_FACTOR_BASE = 0.52
 
@@ -108,32 +109,21 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   }, [emblaApi, tweenScale])
 
   return (
-    <div className="embla">
-      <div className="embla__viewport" ref={emblaRef}>
-        <div className="embla__container">
+    <div className="embla w-full h-full ">
+      <div className="embla__viewport  w-full h-full" ref={emblaRef}>
+        <div className="embla__container ">
           {slides.map((index) => (
             <div className="embla__slide" key={index}>
-              <div className="embla__slide__number border-2">{index + 1}</div>
+              <div className="embla__slide__number h-[480px] w-[360px]">
+                <Image 
+                  src={`/product-gallery/${index+1}.jpg`}
+                  alt={"left"}            
+                  width={1080}
+                  height={1080}
+                  className="w-full h-full"
+                />
+              </div>
             </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="embla__controls">
-        <div className="embla__buttons">
-          <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-          <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
-        </div>
-
-        <div className="embla__dots">
-          {scrollSnaps.map((_, index) => (
-            <DotButton
-              key={index}
-              onClick={() => onDotButtonClick(index)}
-              className={'embla__dot'.concat(
-                index === selectedIndex ? ' embla__dot--selected' : ''
-              )}
-            />
           ))}
         </div>
       </div>

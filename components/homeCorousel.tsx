@@ -31,25 +31,25 @@ export function HomeCorousel() {
   }, [api])
 
   return (
-    <div>
-      <Carousel className="w-fullh-full max-w-[840px]" opts={{loop: true}} setApi={setApi}>
-        <CarouselContent className="-ml-1">
-          {Array.from({ length: 5 }).map((_, index) => (
-            <CarouselItem key={index} className="pl-1 max-w-[840px] h-full aspect-square">
-              <div className="p-1">
+    <div className="w-full">
+      <div className="w-full items-center justify-center flex">
+        <Carousel setApi={setApi} className="w-full max-w-4xl aspect-square" opts={{ loop: true }}>
+          <CarouselContent>
+            {Array.from({ length: 5 }).map((_, index) => (
+              <CarouselItem key={index}>
                 <Card>
-                  <CardContent className="flex w-full aspect-square items-center justify-center p-6">
-                    <span className="text-2xl font-semibold">{index + 1}</span>
+                  <CardContent className="flex aspect-square w-full items-center justify-center p-6">
+                    <span className="text-4xl font-semibold">{index + 1}</span>
                   </CardContent>
                 </Card>
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious className="h-10 bg-red-500 w-12 text-white hover:bg-red-500 hover:text-white"/>
-        <CarouselNext className="h-10 bg-red-500 w-12 text-white hover:bg-red-500 hover:text-white" />
-      </Carousel>
-      <div className="py-2 text-center text-sm text-muted-foreground">
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="h-10 bg-red-500 w-12 text-white hover:bg-red-500 hover:text-white"/>
+          <CarouselNext className="h-10 bg-red-500 w-12 text-white hover:bg-red-500 hover:text-white" />
+        </Carousel>
+      </div>
+      <div className="py-10 text-lg text-muted-foreground items-center justify-center flex">
         Slide {current} of {count}
       </div>
   </div>
