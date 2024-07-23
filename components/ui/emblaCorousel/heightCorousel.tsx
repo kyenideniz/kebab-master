@@ -8,8 +8,6 @@ import {
 } from 'embla-carousel'
 import useEmblaCarousel from 'embla-carousel-react'
 import {
-  NextButton,
-  PrevButton,
   usePrevNextButtons
 } from './arrowButton'
 import { DotButton, useDotButton } from './dotButton'

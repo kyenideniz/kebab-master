@@ -11,8 +11,8 @@ const font = Font({
  });
 
 export const metadata: Metadata = {
-  title: "Admin Eurolines",
-  description: "Admin Panel for BusEurolines",
+  title: "Doner Robot",
+  description: "Official Doner Robot Web Page",
 };
 
 export default function RootLayout({

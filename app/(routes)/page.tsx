@@ -131,7 +131,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="text-3xl font-bold text-[#cf0a2c]">Energy Efficiency</div>
-                  <div className="py-4 text-xl">Achieve cost savings with our machine's low energy consumption, designed for efficiency without compromising performance. Optimize your operations while reducing overheads effortlessly.</div>
+                  <div className="py-4 text-xl">Achieve cost savings with our machine&apos;s low energy consumption, designed for efficiency without compromising performance. Optimize your operations while reducing overheads effortlessly.</div>
                 </div>
             </div>
           </div>
