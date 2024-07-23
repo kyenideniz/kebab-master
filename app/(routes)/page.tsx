@@ -8,7 +8,6 @@ import { Input } from "@/components/ui/input";
 import { Accordion, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Image from "next/image";
 
-import '@/components/ui/emblaCorousel/css/base.css'
 import { useTheme } from "next-themes";
 
 export default function Home() {

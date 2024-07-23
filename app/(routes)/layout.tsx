@@ -1,4 +1,4 @@
-import { redirect } from "next/navigation"
+import '@/components/ui/emblaCorousel/css/base.css'
 import { Navbar }  from "@/components/navbar";
 
 interface DashboardType {
