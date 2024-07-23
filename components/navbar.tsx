@@ -29,7 +29,7 @@ export function Navbar({ className, ...props } : React.HTMLAttributes<HTMLElemen
             <div className='flex items-center h-16 px-2'>
                 <div className='items-start justify-start flex w-full'>
                     <Link href="/" className='text-4xl font-bold'> 
-                        KebabMaster
+                        DonerRobot
                     </Link>
                 </div>
                 <nav className={cn("flex items-center space-x-4 lg:space-x-6", className)}>

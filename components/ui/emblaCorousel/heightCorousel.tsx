@@ -96,8 +96,6 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   useEffect(() => {
     if (!emblaApi) return
 
-    setTweenNodes(emblaApi)
-    setTweenFactor(emblaApi)
     tweenScale(emblaApi)
 
     emblaApi

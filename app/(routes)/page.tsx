@@ -39,7 +39,7 @@ export default function Home() {
               Discover the benefits of
             </div>
             <div className=" text-justify font-[600] text-[36px] w-full text-4xl">
-              KebabMaster Machines
+              DonerRobot Machines
             </div>
           </div>
 
@@ -156,7 +156,7 @@ export default function Home() {
           <div className="p-6 pt-12 grid grid-cols-2 ">
             <div className="p-4 py-8">
               <div className="py-6 text-4xl font-bold leading-normal">Reach out easily!</div>
-              <div className="py-6 text-2xl line- text-justify">Experience top-notch machine solutions with KebabMaster. Browse a variety of options for your business needs.</div>
+              <div className="py-6 text-2xl line- text-justify">Experience top-notch machine solutions with DonerRobot. Browse a variety of options for your business needs.</div>
               <div className="py-6">
                 <Button className=" bg-[#cf0a2c] h-16 w-1/3 text-xl rounded-none"><Link href={"/contact"}>Contact</Link></Button>
               </div>

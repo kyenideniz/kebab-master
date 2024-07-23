@@ -27,7 +27,7 @@ export default function Contact() {
                                         <MailOpen className="inline text-2xl pr-3 "/>
                                         <div className="inline h-[40px] aspect-square">E-Mail Address</div>
                                     </div>
-                                    <div className="text-xl underline">kebabmaster@gmail.com</div>
+                                    <div className="text-xl underline">donerrobot@gmail.com</div>
                                 </div>
                             </div>
                             <div className="grid grid-cols-2 pt-8 ">
