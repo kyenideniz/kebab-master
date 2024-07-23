@@ -9,6 +9,7 @@ import { Accordion, AccordionItem, AccordionTrigger } from "@/components/ui/acco
 import Image from "next/image";
 
 import { useTheme } from "next-themes";
+import Link from "next/link";
 
 export default function Home() {
   const { setTheme } = useTheme();
@@ -54,7 +55,7 @@ export default function Home() {
 
           <div className="space-x-4 col-span-3 w-full col-start-2 row-start-2 row-span-1 absolute -bottom-4 grid grid-cols-12 ">
             <Input placeholder="Contact Address" className="col-span-10 w-full h-16 rounded-none text-xl shadow-lg border-0" />
-            <Button className=" bg-[#cf0a2c] col-span-2 h-16 w-full text-lg rounded-none">Submit</Button>
+            <Button className=" bg-[#cf0a2c] col-span-2 h-16 w-full text-lg rounded-none"><Link href={"/contact"}>Submit</Link></Button>
           </div>
         </div>  
       </div>
@@ -157,7 +158,7 @@ export default function Home() {
               <div className="py-6 text-4xl font-bold leading-normal">Reach out easily!</div>
               <div className="py-6 text-2xl line- text-justify">Experience top-notch machine solutions with KebabMaster. Browse a variety of options for your business needs.</div>
               <div className="py-6">
-                <Button className=" bg-[#cf0a2c] h-16 w-1/3 text-xl rounded-none">Contact</Button>
+                <Button className=" bg-[#cf0a2c] h-16 w-1/3 text-xl rounded-none"><Link href={"/contact"}>Contact</Link></Button>
               </div>
             </div>
            
