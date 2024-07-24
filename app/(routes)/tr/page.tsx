@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <div className="p-2 w-full">
-      <div className="lg:p-12 sm:p-4 w-full items-center justify-center flex">
+      <div className="lg:p-12 md:p-12 sm:p-4 xs:p-4 w-full items-center justify-center flex">
         <div className="lg:max-w-6xl md:max-w-5xl sm:max-w-3xl xs:max-w-lg grid grid-cols-5 grid-rows-2 w-full space-x-3 relative "> 
           <div className="lg:h-[92px] md:h-[82px] sm:h-[72px] aspect-square bg-slate-300 col-start-1 col-span-1 row-start-1 left-8 top-0">
             <Image 
@@ -30,10 +30,10 @@ export default function Home() {
           </div>
 
           <div className=" col-span-3  col-start-2 row-start-1 row-span-2 absolute top-8 ">
-            <div className="text-justify font-[600] lg:pb-8 md:pb-8 sm:pb-2 xs:pb-2 w-full lg:text-[32px] md:text-[28px] sm:text-[16px] xs:text-[11px]">
+            <div className="text-justify font-[600] lg:pb-8 md:pb-8 sm:pb-2 xs:pb-2 w-full lg:text-[32px] md:text-[28px] sm:text-[20px] xs:text-[15px]">
               DonerRobot Makinelerinin
             </div>
-            <div className=" text-justify font-[600] w-full lg:text-[32px] md:text-[28px] sm:text-[16px] xs:text-[11px]">
+            <div className=" text-justify font-[600] w-full lg:text-[32px] md:text-[28px] sm:text-[20px] xs:text-[15px]">
               Faydalarını Keşfet
             </div>
           </div>

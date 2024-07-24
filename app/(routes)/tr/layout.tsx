@@ -8,7 +8,7 @@ interface DashboardType {
 export default async function Dashboard({children}: DashboardType) {
 
     return (
-        <div className="px-12">
+        <div className="">
             <Navbar/>
             {children}
             <Footer />
