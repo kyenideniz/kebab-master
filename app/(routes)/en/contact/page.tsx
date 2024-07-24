@@ -1,10 +1,22 @@
+"use client"
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { MailOpen, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Contact() {
+    const [firstName, setFirstName] = useState("");
+    const [lastName, setLastName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+    
+    function onClick(){
+        console.log("First Name", firstName);
+    }
+
     return (
         <div className="p-2 w-full">
             <div className="lg:p-12 md:p-12 sm:p-2 xs:p-2 w-full items-center justify-center flex">
@@ -51,21 +63,48 @@ export default function Contact() {
                     <div className="lg:col-span-2 md:col-span-2 sm:col-span-5 xs:col-span-5 sm:pt-4 xs:pt-4 pr-2">
                         <div className="p-12 bg-[#cf0a2c] text-white w-full">
                             <div className="text-4xl font-semibold py-8">
-                                Get in Thouch
+                                Get in Touch
                             </div>
                             <div className="grid grid-cols-2">
                                 <div className="pb-6 pr-3">
                                     <div className="text-xl pl-3 py-3">First Name</div>
-                                    <Input placeholder="John" className="placeholder:font-light font-light text-xl bg-transparent w-full h-12 focus-visible:text-xl placeholder:text-white border-white placeholder:text-xl"/>
+                                    <Input 
+                                        placeholder="John" 
+                                        type="text"
+                                        value={firstName}
+                                        onChange={(e) => {
+                                            setFirstName(e.target.value);
+                                        }}
+                                        name="firstName"
+                                        className="placeholder:font-light font-light text-xl bg-transparent w-full h-12 focus-visible:text-xl placeholder:text-white border-white placeholder:text-xl"
+                                    />
                                 </div>
                                 <div className="pb-6 pl-3">
                                     <div className="text-xl pl-3 py-3">Last Name</div>
-                                    <Input placeholder="Doe" className="placeholder:font-light font-light text-xl bg-transparent w-full h-12 focus-visible:text-xl placeholder:text-white border-white placeholder:text-xl"/>
+                                    <Input 
+                                        placeholder="Doe" 
+                                        type="text"
+                                        value={lastName}
+                                        onChange={(e) => {
+                                            setLastName(e.target.value);
+                                        }}
+                                        name="lastName"
+                                        className="placeholder:font-light font-light text-xl bg-transparent w-full h-12 focus-visible:text-xl placeholder:text-white border-white placeholder:text-xl"
+                                    />
                                 </div>
                             </div>
                             <div className="pb-6 ">
                                 <div className="text-xl pl-3 py-3">E-Mail</div>
-                                <Input placeholder="johndoe@mail.com" className="placeholder:font-light font-light text-xl placeholeder:underline focus-within:text-white focus-visible:text-xl bg-transparent w-full h-12 placeholder:text-white border-white placeholder:text-xl"/>
+                                <Input 
+                                    placeholder="johndoe@mail.com" 
+                                    type="email"
+                                    name="email"
+                                    value={email}
+                                    onChange={(e) => {
+                                        setEmail(e.target.value);
+                                    }}
+                                    className="placeholder:font-light font-light text-xl placeholeder:underline focus-within:text-white focus-visible:text-xl bg-transparent w-full h-12 placeholder:text-white border-white placeholder:text-xl"
+                                />
                             </div>
                             <div>
                                 <div className="pb-4">
@@ -73,12 +112,21 @@ export default function Contact() {
                                 </div>
                                 <Textarea
                                     placeholder="Your Message..."
-                                    className="text-xl text-white placeholder:font-light font-light placeholder:text-white placeholder:p-2 resize-none bg-transparent border-none shadow-lg shadow-gray-900"
-                                    
+                                    name="message"
+                                    value={message}
+                                    onChange={(e) => {
+                                        setMessage(e.target.value);
+                                    }}
+                                    className="text-xl text-white focus:border-0 placeholder:font-light font-light placeholder:text-white placeholder:p-2 resize-none bg-transparent border-none shadow-lg shadow-gray-900"     
                                 />
                             </div>
                             <div className="pt-12">
-                                <Button className="w-full bg-[#d3d3d3] hover:bg-[#c0c0c0] font-semibold h-full text-black text-xl">Send</Button>
+                                <Button 
+                                onClick={onClick}
+                                    className="w-full bg-[#d3d3d3] hover:bg-[#c0c0c0] font-semibold h-full text-black text-xl"
+                                >
+                                    Send
+                                </Button>
                             </div>
                         </div>
                     </div>
