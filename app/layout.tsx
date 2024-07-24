@@ -1,7 +1,7 @@
 import './globals.css'
 import { Titillium_Web as Font } from 'next/font/google'
 import { Metadata } from 'next'
-import '@/components/ui/emblaCorousel/css/base.css'
+import '@/components/css/base.css'
 
 const font = Font({ 
     weight: ['200', '300', '400', '600', '700', '900'],

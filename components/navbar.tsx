@@ -28,7 +28,7 @@ export function Navbar({ className, ...props } : React.HTMLAttributes<HTMLElemen
         <div className='border-b'>
             <div className='flex items-center h-16 px-2'>
                 <div className='items-start justify-start flex w-full'>
-                    <Link href="/" className='text-4xl font-bold'> 
+                    <Link href="/" className='lg:text-4xl md:text-4xl sm:text-2xl xs:text-2xl font-bold'> 
                         DonerRobot
                     </Link>
                 </div>

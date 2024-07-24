@@ -1,3 +1,4 @@
+
 "use client"
 
 import * as React from "react"
@@ -12,7 +13,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 
-export function HomeCorousel() {
+export function HeightCorousel() {
   const [api, setApi] = React.useState<CarouselApi>()
   const [current, setCurrent] = React.useState(0)
   const [count, setCount] = React.useState(0)
@@ -40,7 +41,7 @@ export function HomeCorousel() {
                 <Card className="border-none">
                   <CardContent className="flex aspect-square w-full items-center justify-center p-6">
                   <Image 
-                    src={`/home/${index+1}.jpg`}
+                    src={`/product-gallery/${index+1}.jpg`}
                     alt={"left"}            
                     width={1080}
                     height={1080}
@@ -51,12 +52,8 @@ export function HomeCorousel() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="h-10 bg-red-500 w-12 text-white hover:bg-red-500 hover:text-white"/>
-          <CarouselNext className="h-10 bg-red-500 w-12 text-white hover:bg-red-500 hover:text-white" />
+        
         </Carousel>
-      </div>
-      <div className="py-10 text-lg text-muted-foreground items-center justify-center flex">
-        Slide {current} of {count}
       </div>
   </div>
   )
