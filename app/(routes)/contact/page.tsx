@@ -14,7 +14,7 @@ export default function Contact() {
                             <div className="lg:text-4xl md:text-4xl sm:text-3xl xs:text-3xl font-bold py-8"> 
                                 Company Details
                             </div>
-                            <div className="grid grid-cols-2">
+                            <div className="grid grid-cols-2 w-full">
                                 <div className="">
                                     <div className="lg:text-2xl md:text-2xl sm:text-xl xs:text-xl py-6">
                                         <Phone className="inline pr-3 "/>

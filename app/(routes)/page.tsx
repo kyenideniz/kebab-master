@@ -48,7 +48,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="space-x-4 col-span-3 w-full col-start-2 row-start-2 row-span-1 absolute lg:-bottom-2 md:-bottom-4 sm:-bottom-0 xs:-bottom-0 grid grid-cols-12 ">
+          <div className="space-x-4 col-span-3 w-full col-start-2 row-start-2 row-span-1 absolute lg:-bottom-4 md:-bottom-4 sm:-bottom-8 xs:-bottom-8 grid grid-cols-12 ">
             <Input placeholder="Contact Address" className="col-span-10 sm:col-span-8 xs:col-span-8 w-full lg:h-16 md:h-12 sm:h-8 rounded-none text-xl shadow-lg border-0" />
             <Button className=" bg-[#cf0a2c] col-span-2 sm:col-span-4 xs:col-span-4 lg:h-16 md:h-12 sm:h-8 lg:text-lg md:text-base sm:text-xs rounded-none"><Link href={"/contact"}>Submit</Link></Button>
           </div>
@@ -148,12 +148,12 @@ export default function Home() {
 
       <div className="items-center justify-center flex">
         <div className="max-w-7xl w-full border-t-[2px]">
-          <div className="lg:p-6 md:p-6 sm:p-0 xs:p-0 lg:pt-12 md:pt-12 sm:pt-0 xs:pt-0 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-4 xs:grid-cols-3 ">
-            <div className="p-4 py-8 lg:col-span-1 md:col-span-1 sm:col-span-3 xs:col-span-2">
-              <div className="py-6 text-4xl lg:text-[1.875rem] md:text-[1.675rem] sm:text-[1.475rem] xs:text-[1.475rem] font-bold">Reach out easily!</div>
-              <div className="py-6 lg:text-2xl md:text-2xl sm:text-lg xs:text-base lg:text-justify md:text-justify sm:text-left xs:text-left">Experience top-notch machine solutions with DonerRobot. Browse a variety of options for your business needs.</div>
+          <div className="lg:p-6 md:p-6 sm:p-0 xs:p-0 lg:pt-12 md:pt-12 sm:pt-0 xs:pt-0 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-4 xs:grid-cols-4 ">
+            <div className="lg:p-4 lg:py-8 md:p-4 md:py-8 sm:p-2 sm:py-0 xs:p-2 xs:py-0 lg:col-span-1 md:col-span-1 sm:col-span-3 xs:col-span-3">
+              <div className="lg:py-6 md:py-6 sm:py-2 xs:py-2 text-4xl lg:text-[1.875rem] md:text-[1.675rem] sm:text-[1.475rem] xs:text-[1.475rem] font-bold">Reach out easily!</div>
+              <div className="lg:py-6 md:py-6 sm:py-2 xs:py-2  lg:text-2xl md:text-2xl sm:text-lg xs:text-base lg:text-justify md:text-justify sm:text-left xs:text-left">Experience top-notch machine solutions with DonerRobot. Browse a variety of options for your business needs.</div>
               <div className="py-6">
-                <Button className=" bg-[#cf0a2c] h-16 w-1/3 text-xl rounded-none"><Link href={"/contact"}>Contact</Link></Button>
+                <Button className=" bg-[#cf0a2c] lg:h-16 md:h-16 sm:h-10 xs:h-10 w-1/3 lg:text-xl md:text-xl sm:text-base xs:text-base rounded-none"><Link href={"/contact"}>Contact</Link></Button>
               </div>
             </div>
            
@@ -163,7 +163,7 @@ export default function Home() {
                 alt={"left"}            
                 width={1080}
                 height={1080}
-                className="lg:h-[128px] md:h-[128px] sm:h-[100px] xs:h-[96px] lg:w-[128px] md:w-[128px] sm:w-[100px] absolute top-8"
+                className="lg:h-[128px] md:h-[128px] sm:h-[100px] xs:h-[60px] h-0 w-0 lg:w-[128px] md:w-[128px] sm:w-[100px] xs:w-[60px] absolute top-8"
               />
             </div>
           </div>

@@ -26,7 +26,7 @@ export default function Product() {
                                 <div> Solving the problem of finding workers</div>
                             </div>
                         </div>
-                        <div className="w-full items-center justify-center flex lg:p-8 md:p-8 sm:p-2 xs:p-2">
+                        <div className="w-full items-center justify-center flex lg:p-8 md:p-8 sm:p-2 xs:p-2 xs:py-4 sm:py-4">
                             <Image 
                                 src={"/product-page/1.png"} 
                                 alt={"left"}            
@@ -36,7 +36,7 @@ export default function Product() {
                             />
                         </div>
                     </div>
-                    <div className="grid grid-cols-2">
+                    <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1">
                         <div className="text-start">
                             <div className="lg:text-5xl md:text-5xl sm:text-3xl xs:text-3xl text-red-500 font-normal lg:p-8 md:p-8 sm:p-2 xs:p-2">
                                 Advantages
@@ -55,7 +55,7 @@ export default function Product() {
                                 <div> Time savings</div>
                             </div>
                         </div>
-                        <div className="max-h-[450px] items-center justify-center flex lg:p-8 md:p-8 sm:p-2 xs:p-2">
+                        <div className="max-h-[450px] items-center justify-center flex lg:p-8 md:p-8 sm:p-2 xs:p-2 ">
                             
                             <Image 
                                 src={"/product-page/2.jpg"} 
@@ -67,7 +67,7 @@ export default function Product() {
                         </div>
                     </div>
                     
-                    <div className="grid grid-cols-2 py-12">
+                    <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 xs:grid-cols-1 py-12">
                         <div className="text-start">
                             <div className="lg:text-5xl md:text-5xl sm:text-3xl xs:text-3xl text-red-500 font-normal lg:p-8 md:p-8 sm:p-2 xs:p-2">
                                 Advantages of Leasing
@@ -83,7 +83,7 @@ export default function Product() {
                                 <div> Possibility of ownership</div>
                             </div>
                         </div>
-                        <div className="max-h-[400px] items-center justify-center flex lg:p-8 md:p-8 sm:p-2 xs:p-2 rounded">
+                        <div className="max-h-[400px] items-center justify-center flex lg:p-8 md:p-8 sm:p-2 xs:p-2 xs:py-4 sm:py-4 rounded">
                             <Image 
                                 src={"/product-page/3.jpg"} 
                                 alt={"left"}            

@@ -32,10 +32,10 @@ const config = {
     },
     extend: {
       screens: {
-        'xs': '400px',
+        'xs': '300px',
         // => @media (min-width: 640px) { ... }
         
-        'sm': '700px',
+        'sm': '650px',
         // => @media (min-width: 700px) { ... }
       },
       colors: {
