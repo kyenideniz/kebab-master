@@ -30,10 +30,10 @@ export default function Home() {
           </div>
 
           <div className=" col-span-3  col-start-2 row-start-1 row-span-2 absolute top-8 ">
-            <div className="text-justify font-[600] lg:pb-8 md:pb-8 sm:pb-2 xs:pb-2 w-full lg:text-[32px] md:text-[28px] sm:text-[20px] xs:text-[15px]">
+            <div className="text-justify font-[600] lg:pb-8 md:pb-8 sm:pb-2 xs:pb-2 w-full lg:text-[32px] md:text-[28px] sm:text-[16px] xs:text-[11px]">
               DonerRobot Makinelerinin
             </div>
-            <div className=" text-justify font-[600] w-full lg:text-[32px] md:text-[28px] sm:text-[20px] xs:text-[15px]">
+            <div className=" text-justify font-[600] w-full lg:text-[32px] md:text-[28px] sm:text-[16px] xs:text-[11px]">
               Faydalarını Keşfet
             </div>
           </div>
