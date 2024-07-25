@@ -2,6 +2,7 @@ import './globals.css'
 import { Titillium_Web as Font } from 'next/font/google'
 import { Metadata } from 'next'
 import '@/components/css/base.css'
+import { Toaster } from '@/components/ui/toaster';
 
 const font = Font({ 
     weight: ['200', '300', '400', '600', '700', '900'],
@@ -24,8 +25,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className && "w-full h-full"}>
-            {children}
-        </body>
+        <main>{children}</main>
+        <Toaster />
+      </body>
     </html>
   );
 }
